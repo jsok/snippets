@@ -55,7 +55,7 @@ class Snippets(object):
 
     def open_editor(self):
         editor = os.environ['EDITOR'] or 'vim'
-        subprocess.call([editor, self.get_snippets_file()])
+        subprocess.call([editor, '+', self.get_snippets_file()])
 
 
 def main():
